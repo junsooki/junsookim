@@ -10,9 +10,8 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
         <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
             <div className="max-w-5xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
-                    <a href="#home" className="font-mono text-xl font-bold -text-white">  {/* This is for logo */}
-                        Jun
-                        <span className="text-blue-500">soo</span>
+                    <a href="#home" className="font-mono text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">  
+                        Junsoo
                     </a> 
 
                     <div 
