@@ -1,3 +1,4 @@
+import { Routes, Route, useLocation } from 'react-router-dom';
 import React, { useState } from 'react';
 import './App.css'
 import { LoadingScreen } from './components/LoadingScreen';
@@ -6,6 +7,7 @@ import { MobileMenu } from './components/MobileMenu';
 import { Home } from './components/sections/Home';
 import { About } from './components/sections/About';
 import { Projects } from './components/sections/Projects';
+import { Blog } from './components/sections/Blog';
 import { Contact } from './components/sections/Contact';
 import "./index.css";
 
@@ -22,6 +24,7 @@ function App() {
           <Home />
           <About />
           <Projects />
+          <Blog />
           <Contact />
         </div>
     </>
