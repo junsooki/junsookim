@@ -5,7 +5,7 @@ export const BlogPreviews = () => {
   const navigate = useNavigate();
 
   const handleSeeMore = (id) => {
-    navigate(`/blogs/${id}`);
+    navigate(`/blog/${id}`);
   };
 
   const blogPosts = [
@@ -14,7 +14,7 @@ export const BlogPreviews = () => {
   ];
   
   return (
-    <section id="blog" className="min-h-screen flex items-center justify-center py-20">
+    <section id="blogsPreviews" className="min-h-screen flex items-center justify-center py-20">
       <ReviewOnScroll>
       <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent text-center">Blogs</h2>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">

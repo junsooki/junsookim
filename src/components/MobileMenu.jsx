@@ -1,6 +1,20 @@
 import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleNavigation = (sectionId) => {
+        if (location.pathname !== '/') {
+            navigate('/#' + sectionId);
+        } else {
+            document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        setMenuOpen(false);
+    };
+
     return (
         <div className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] 
             z-40 flex flex-col items-center justify-center transition-all duration-300 ease-in-out
@@ -15,50 +29,44 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
             </button>
 
             <a 
-                href="#home" 
-                onClick={() => setMenuOpen(false)} 
-                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                onClick={() => handleNavigation('home')} 
+                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 cursor-pointer
                     ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
                 `}
             > 
                 Home 
             </a>
             <a 
-                href="#about" 
-                onClick={() => setMenuOpen(false)} 
-                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                onClick={() => handleNavigation('about')} 
+                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 cursor-pointer
                     ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
                 `}
             > 
                 About 
             </a>
             <a 
-                href="#projects" 
-                onClick={() => setMenuOpen(false)} 
-                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                onClick={() => handleNavigation('projects')} 
+                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 cursor-pointer
                     ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
                 `}
             > 
                 Projects 
             </a>
             <a 
-                href="#blog" 
-                onClick={() => setMenuOpen(false)} 
-                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                onClick={() => handleNavigation('blogsPreviews')} 
+                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 cursor-pointer
                     ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
                 `}
             > 
                 Blog 
             </a>
             <a 
-                href="#contact" 
-                onClick={() => setMenuOpen(false)} 
-                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+                onClick={() => handleNavigation('contact')} 
+                className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 cursor-pointer
                     ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
                 `}
             > 
                 Contact 
-
             </a>
         </div>
     );

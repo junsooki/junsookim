@@ -9,7 +9,7 @@ import { About } from './components/pages/sections/About';
 import { Projects } from './components/pages/sections/Projects';
 import { BlogPreviews } from './components/pages/sections/BlogPreviews';
 import { Contact } from './components/pages/sections/Contact';
-import { Blogs } from './components/pages/Blogs';
+import { BlogPage } from './components/pages/BlogPage';
 import "./index.css";
 
 function App() {
@@ -47,30 +47,9 @@ function DefaultPage() {
   );
 }
 
-function BlogPage() {
-  return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold mb-6">Blog</h2>
-      <ul className="mb-8">
-        <li className="mb-2">
-          <Link to="/blog/topic1" className="text-blue-500 hover:text-blue-700 underline">Topic 1</Link>
-        </li>
-        <li className="mb-2">
-          <Link to="/blog/topic2" className="text-blue-500 hover:text-blue-700 underline">Topic 2</Link>
-        </li>
-      </ul>
-
-      <Routes>
-        <Route path=":topicId" element={<Topic />} />
-        <Route index element={<h3 className="text-xl text-gray-300">Please select a topic.</h3>} />
-      </Routes>
-    </div>
-  );
-}
-
-function Topic() {
-  let { topicId } = useParams();
-  return <h3 className="text-2xl font-bold">Requested topic: {topicId}</h3>;
-}
+// function Topic() {
+//   let { topicId } = useParams();
+//   return <h3 className="text-2xl font-bold">Requested topic: {topicId}</h3>;
+// }
 
 export default App;
