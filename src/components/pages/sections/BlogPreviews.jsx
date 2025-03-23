@@ -22,7 +22,9 @@ export const BlogPreviews = () => {
           <div key={post.id} className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(50,130,246,0.1)] transition">
               <h3 className="text-xl font-bold mb-2">{post.title}</h3>
               <p className="mb-4">{post.excerpt}</p>
-              <span onClick={() => handleSeeMore(post.id)}>Read More →</span>
+              <div className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors my-4"> 
+                <span onClick={() => handleSeeMore(post.id)}>Read More →</span>
+              </div>
           </div>
         ))}
       </div>
