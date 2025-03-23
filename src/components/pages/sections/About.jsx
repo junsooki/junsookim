@@ -1,4 +1,4 @@
-import { ReviewOnScroll } from "../ReviewOnScroll";
+import { ReviewOnScroll } from "../../ReviewOnScroll";
 
 export const About = () => {
     const frontendSkills = ["React", "TypeScript", "Tailwindcss"];

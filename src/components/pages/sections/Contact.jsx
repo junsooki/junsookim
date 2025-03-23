@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ReviewOnScroll } from "../ReviewOnScroll";
+import { ReviewOnScroll } from "../../ReviewOnScroll";
 import emailjs from 'emailjs-com';
 
 export const Contact = () => {
