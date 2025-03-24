@@ -1,4 +1,5 @@
 import { ReviewOnScroll } from "../../ReviewOnScroll";
+import resume from "../../../assets/resume.pdf";
 
 export const About = () => {
     const frontendSkills = ["React", "TypeScript", "Tailwindcss"];
@@ -17,6 +18,9 @@ export const About = () => {
                     <div className="glass rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
                         <p className="text-gray-300 mb-6">
                         I’m a passionate computer engineering sophomore at USC with a strong interest in reinforcement learning, large language models, and their optimization and integration. I enjoy tackling complex problems at the intersection of machine learning and real-world applications. Beyond practical implementation, I am also deeply fascinated by the theoretical foundations of computer science and algorithmic logistics, always eager to explore and understand the principles that drive modern computing.
+                            <a href={resume} target = "_blank" className="flex justify-center items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors my-4">
+                                To see my resume, click here.
+                            </a>
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
