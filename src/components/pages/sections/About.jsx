@@ -1,4 +1,5 @@
 import { ReviewOnScroll } from "../../ReviewOnScroll";
+import { useNavigate } from 'react-router-dom';
 import resume from "../../../assets/resume.pdf";
 
 export const About = () => {
@@ -6,6 +7,12 @@ export const About = () => {
     const backendSkills = ["Node.js", "Python", "MongoDB", "C++", "Java (multi-threading, JSON/CSV parsing)"];
     const mlAiSkills = ["TensorFlow","OpenCV", "Mediapipe", "Reinforcement Learning", "Large Language Models (LLMs)", "Neo4j (Knowledge Graphs)"];
     const otherSkills = ["Mathematica (for scientific calculations)", "Data analysis and optimization", "Concurrent programming (locks, semaphores)",];
+
+    const navigate = useNavigate();
+
+    const handleTimeline = () => {
+        navigate(`/timeline`);
+    };
 
     return (
         <section id="about" className="min-h-screen flex items-center justify-center py-20">
@@ -99,15 +106,22 @@ export const About = () => {
                             <h3 className="text-xl font-bold mb-4">Work Experience</h3>
                             <div className="space-y-4 text-gray-300">
                                 <div>
-                                    <h4 className="font-semibold"> Undergraduate Researcher at ICAROS Lab(Nov 2024-Present) </h4>
-                                    <p> I collaborated with Postdoctoral researcher on reinforcement learning experiments for human-robot cooperative games, exploring innovative ways to enhance interaction between robots and humans. In addition, I engineered a Python-based AI interaction system using the Groq API, which enabled autonomous dialogue between language models. To further improve the system’s capabilities, I developed Neo4j knowledge graphs that facilitated planning when the discussions within the large language models (LLMs) reached their limitations, enabling more efficient and structured decision-making processes.</p>
+                                    <h4 className="font-semibold"> Undergraduate Researcher at ICAROS Lab (Nov 2024-Present) </h4>
                                 </div>
                                 <div>
                                     <h4 className="font-semibold"> Undergraduate Research Assitant at Takahashi Lab (Nov 2023-June2024) </h4>
-                                    <p> I collaborated with graduate students on quantum physics experiments, gaining expertise in quantum mechanics. As part of my work, I developed a C++ program to calculate the standard deviation for N-V center data, optimizing lab data analysis. Additionally, I used Mathematica to calculate detection volumes from research papers, enhancing the accuracy and efficiency of experimental results.</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div className="grid place-items-center py-12">
+                        <button 
+                            onClick={() => handleTimeline()}
+                            className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden 
+                            hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130, 246, 0.4)]"
+                        >
+                            View Detailed Timeline
+                        </button>
                     </div>
                 </div>
             </ReviewOnScroll>

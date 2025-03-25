@@ -10,6 +10,7 @@ import { Projects } from './components/pages/sections/Projects';
 import { BlogPreviews } from './components/pages/sections/BlogPreviews';
 import { Contact } from './components/pages/sections/Contact';
 import { BlogPage } from './components/pages/BlogPage';
+import { Timeline } from './components/pages/sections/Timeline';
 import "./index.css";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Routes>
           <Route path="/" element={<DefaultPage />} />
           <Route path="/blog/*" element={<BlogPage />} />
+          <Route path="/timeline" element={<Timeline />} />
         </Routes>
       </div>
     </>
