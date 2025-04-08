@@ -37,7 +37,7 @@ const TimelineContent = ({ title, company, companyLink, duration, location, desc
 export const Timeline = () => {
   const experiences = [
     {
-      title: " Undergraduate Researcher at ICAROS Lab",
+      title: "Undergraduate Researcher at ICAROS Lab",
       company: "ICAROS Lab @ USC",
       companyLink: "https://icaros.usc.edu/",
       duration: "Nov 2024 - Present",
@@ -46,6 +46,22 @@ export const Timeline = () => {
         "collaborated with Postdoctoral researcher on reinforcement learning experiments for human-robot cooperative games, exploring innovative ways to enhance interaction between robots and humans", 
         "engineered a Python-based AI interaction system using the Groq API, which enabled autonomous dialogue between language models",
         "developed Neo4j knowledge graphs that facilitated planning when the discussions within the large language models (LLMs) reached their limitations, enabling more efficient and structured decision-making processes",
+        "developing PDDL Planner for Overcooked ai from scratch that will be used for incremental planning",
+      ]
+    },
+    {
+      title: "Professional Event Director at KSEA",
+      company: "Korean-American Scientists and Engineers Association",
+      companyLink: "https://www.ksea.org/",
+      duration: "Aug 2024 – Present",
+      location: "Los Angeles, California",
+      descriptions: [
+        "organized and hosted 20+ events for undergraduate students, including panels with invited speakers and networking opportunities",
+        "participated in weekly meetings to assess student needs and align event planning with club goals",
+        "created presentations, coordinated logistics, invited panelists, and booked venues—handling all aspects of event execution",
+        "attended Katalyst, a national undergraduate conference with students from USC, UCLA, UCSD, UNC Chapel Hill, and more to present research and engage with industry mentors",
+        "volunteered at NMSC (National Math and Science Competition), proctored exams, taught drone programming, and answered college admissions questions for parents",
+        "helped organize the College Expo, an international virtual event connecting high school students globally with undergraduates from U.S. universities like UCLA, UCSD, and UMich"
       ]
     },
     {
@@ -56,10 +72,10 @@ export const Timeline = () => {
       location: "Los Angeles, California",
       descriptions: [
         "collaborated with graduate students on quantum physics experiments, gaining expertise in quantum mechanics",
-        "developed a C++ program to calculate the standard deviation for N-V center data, optimizing lab data analysis.",
+        "built a C++ program to compute the standard deviation of N-V center data, significantly improving the speed and reliability of lab data processing.",
         "used Mathematica to calculate detection volumes from research papers, verifying the accuracy of experimental results."
       ]
-    }
+    },
   ];
 
   return (
