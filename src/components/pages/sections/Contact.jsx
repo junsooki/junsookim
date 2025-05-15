@@ -3,54 +3,54 @@ import { ReviewOnScroll } from "../../ReviewOnScroll";
 import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
-  // Add state for form data
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+//   // Add state for form data
+//   const [formData, setFormData] = useState({
+//     name: "",
+//     email: "",
+//     message: "",
+//   });
 
-  // Handle input changes
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
+//   // Handle input changes
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData((prevState) => ({
+//       ...prevState,
+//       [name]: value,
+//     }));
+//   };
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+//   const sendEmail = (e) => {
+//     e.preventDefault();
 
-    // Ensure environment variables are present
-    if (
-      !import.meta.env.VITE_SERVICE_ID ||
-      !import.meta.env.VITE_TEMPLATE_ID ||
-      !import.meta.env.VITE_PUBLIC_KEY
-    ) {
-      alert("Missing EmailJS environment variables!");
-      return;
-    }
+//     // Ensure environment variables are present
+//     if (
+//       !import.meta.env.VITE_SERVICE_ID ||
+//       !import.meta.env.VITE_TEMPLATE_ID ||
+//       !import.meta.env.VITE_PUBLIC_KEY
+//     ) {
+//       alert("Missing EmailJS environment variables!");
+//       return;
+//     }
 
-    // Send email using emailjs.send
-    emailjs
-      .send(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        formData,
-        import.meta.env.VITE_PUBLIC_KEY,
-      )
-      .then(
-        () => {
-          alert("Message Sent!");
-          setFormData({ name: "", email: "", message: "" }); // Reset form
-        },
-        (error) => {
-          console.error("Email sending error: ", error);
-          alert("Oops! Something went wrong. Please try again.");
-        }
-      );
-  };
+//     // Send email using emailjs.send
+//     emailjs
+//       .send(
+//         import.meta.env.VITE_SERVICE_ID,
+//         import.meta.env.VITE_TEMPLATE_ID,
+//         formData,
+//         import.meta.env.VITE_PUBLIC_KEY,
+//       )
+//       .then(
+//         () => {
+//           alert("Message Sent!");
+//           setFormData({ name: "", email: "", message: "" }); // Reset form
+//         },
+//         (error) => {
+//           console.error("Email sending error: ", error);
+//           alert("Oops! Something went wrong. Please try again.");
+//         }
+//       );
+//   };
 
   return (
     <section
@@ -58,7 +58,8 @@ export const Contact = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <ReviewOnScroll>
-        <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
+        <p>junsooki@usc.edu</p>
+        {/* <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent text-center">
             Get In Touch
           </h2>
@@ -106,7 +107,7 @@ export const Contact = () => {
               Send Message
             </button>
           </form>
-        </div>
+        </div> */}
       </ReviewOnScroll>
     </section>
   );

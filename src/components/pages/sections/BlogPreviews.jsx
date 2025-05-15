@@ -9,8 +9,7 @@ export const BlogPreviews = () => {
   };
 
   const blogPosts = [
-    { id: 1, title: "First Post", excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc nunc, consectetur vel nisi semper, elementum sollicitudin erat. Mauris lectus sapien, dapibus sed fringilla eu, gravida eu orci. Nullam porttitor mauris ac lectus euismod, at ornare tellus vestibulum." },
-    { id: 2, title: "Second Post", excerpt: "ALorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc nunc, consectetur vel nisi semper, elementum sollicitudin erat. Mauris lectus sapien, dapibus sed fringilla eu, gravida eu orci. Nullam porttitor mauris ac lectus euismod, at ornare tellus vestibulum." },
+    { id: 1, title: "My 270 experience! Spring 2025", excerpt: " The class is structured so that we learn dynamic programming first, then greedy algorithms, divide and conquer, network flow, P/NP, and finally a bit about theory of computation." },
   ];
   
   return (

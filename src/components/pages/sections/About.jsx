@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import resume from "../../../assets/resume.pdf";
 
 export const About = () => {
-    const frontendSkills = ["React", "TypeScript", "Tailwindcss"];
+    const frontendSkills = ["React", "TypeScript", "Tailwindcss", "Javascript"];
     const backendSkills = ["Node.js", "Python", "MongoDB", "C++", "Java (multi-threading, JSON/CSV parsing)"];
     const mlAiSkills = ["TensorFlow","OpenCV", "Mediapipe", "Reinforcement Learning", "Large Language Models (LLMs)", "Neo4j (Knowledge Graphs)"];
-    const otherSkills = ["Mathematica (for scientific calculations)", "Data analysis and optimization", "Concurrent programming (locks, semaphores)",];
+    const otherSkills = ["Mathematica (for scientific calculations)", "Data analysis and optimization", "Concurrent programming (locks, semaphores)", "PDDL"];
 
     const navigate = useNavigate();
 

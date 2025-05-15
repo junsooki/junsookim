@@ -13,10 +13,10 @@ export const BlogPage = () => {
           <h3 className="text-xl font-bold mb-3">Posts</h3>
           <ul className="mb-8">
             <li className="mb-2">
-              <Link to="/blog/1" className="hover:text-blue-500 transition">First Post</Link>
+              <Link to="/blog/1" className="hover:text-blue-500 transition">My 270 experience! Spring 2025</Link>
             </li>
             <li className="mb-2">
-              <Link to="/blog/2" className="hover:text-blue-500 transition">Second Post</Link>
+              {/* <Link to="/blog/2" className="hover:text-blue-500 transition">Second Post</Link> */}
             </li>
           </ul>
         </div>

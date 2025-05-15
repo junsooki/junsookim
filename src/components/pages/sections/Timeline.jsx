@@ -52,7 +52,7 @@ export const Timeline = () => {
     {
       title: "Professional Event Director at KSEA",
       company: "Korean-American Scientists and Engineers Association",
-      companyLink: "https://www.ksea.org/",
+      companyLink: "https://uscksea.github.io/USC-KSEA-Website/",
       duration: "Aug 2024 – Present",
       location: "Los Angeles, California",
       descriptions: [

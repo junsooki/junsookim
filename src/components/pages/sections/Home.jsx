@@ -1,6 +1,7 @@
 import React from "react";
 import { ReviewOnScroll } from "../../ReviewOnScroll";
 import { Link } from "react-router-dom";
+import profile from "../../../assets/junsoo_kim.png";
 
 export const Home = () => {
     // Function to handle smooth scrolling to sections
@@ -18,6 +19,14 @@ export const Home = () => {
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent leading-right"> 
                         Hi, I'm Junsoo!
                     </h1>
+
+                    <div className="mb-6 flex justify-center">
+                        <img 
+                            src={profile}
+                            alt="Junsoo's Profile" 
+                            className="rounded-full w-60 h-60 object-cover border-4 border-blue-500 shadow-lg"
+                        />
+                    </div>
 
                     <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
                         I am a passionate sophomore studying Computer Engineering at USC.
