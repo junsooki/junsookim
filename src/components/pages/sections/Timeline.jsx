@@ -37,20 +37,45 @@ const TimelineContent = ({ title, company, companyLink, duration, location, desc
 export const Timeline = () => {
   const experiences = [
     {
-      title: "Undergraduate Researcher at ICAROS Lab",
-      company: "ICAROS Lab @ USC",
-      companyLink: "https://icaros.usc.edu/",
-      duration: "Nov 2024 - Present",
+      title: "Undergraduate Researcher at GVL Lab",
+      company: "GVL Lab @ USC",
+      companyLink: "https://gvl.usc.edu/",
+      duration: "Aug 2025 - Present",
       location: "Los Angeles, California",
       descriptions: [
-        "collaborated with Postdoctoral researcher on reinforcement learning experiments for human-robot cooperative games, exploring innovative ways to enhance interaction between robots and humans", 
-        "engineered a Python-based AI interaction system using the Groq API, which enabled autonomous dialogue between language models",
-        "developed Neo4j knowledge graphs that facilitated planning when the discussions within the large language models (LLMs) reached their limitations, enabling more efficient and structured decision-making processes",
-        "developing PDDL Planner for Overcooked ai from scratch that will be used for incremental planning",
+        "managing data collections and preprocessing for large-scale robotic datasets, ensuring high-quality inputs for training machine learning models",
+        "working with 6+ graduate students to develop robotics simulation platform, contributing to ongoing research projects",
+        "capturing 100 videos per week, preprocessing, and segmenting for reconstruction inside a simulation, requiring deep understanding of system limitations and capabilities"
       ]
     },
     {
-      title: "Professional Event Director at KSEA",
+      title: "Undergraduate Researcher at Robotic Embedded Systems Laboratory",
+      company: "RESL @ USC",
+      companyLink: "https://viterbi-web.usc.edu/~jdesai/RESL/index.html",
+      duration: "Nov 2024 - Present",
+      location: "Los Angeles, California",
+      descriptions: [
+        "working under the advisement of postdoctoral researcher Guangyao Shi to explore heuristics and optimization techniques for enhancing LLM-based task planning in robotic systems",
+        "writing simple search algorithms including A* to understand PDDL planners, improving knowledge of pathfinding and planning algorithms",
+        "developing codebases to implement heuristics for VPR questions enabling more flexible and efficient planning with LLM chain-of-thought or DNN-based approaches",
+        "implementing various VPR heuristic approaches from scratch to better understand the strengths and weaknesses of each method"
+      ]
+    },
+    {
+      title: "Undergraduate Researcher at ICAROS Lab",
+      company: "ICAROS Lab @ USC",
+      companyLink: "https://icaros.usc.edu/",
+      duration: "Nov 2024 - Aug 2025",
+      location: "Los Angeles, California",
+      descriptions: [
+        "collaborated with postdoctoral researchers to design and execute weekly human-robot interaction experiments, managing protocols from initial concept through implementation to streamline data collection and analysis",
+        "wrote and optimized PDDL domain and problem definitions for the Overcooked environment in multiple agent settings; leveraged Llama 3.3 prompt engineering to iteratively refine 10+ functional planning scenarios",
+        "built a comprehensive Python framework to facilitate systematic LLM chain-of-thought sanity checks, reducing integration errors and accelerating debugging cycles",
+        "designed and integrated dynamic Neo4j knowledge graphs to support complex LLM planning, enhancing decision-making capabilities and improving query response times"
+      ]
+    },
+    {
+      title: "Vice President at KSEA",
       company: "Korean-American Scientists and Engineers Association",
       companyLink: "https://uscksea.github.io/USC-KSEA-Website/",
       duration: "Aug 2024 – Present",
@@ -65,15 +90,15 @@ export const Timeline = () => {
       ]
     },
     {
-      title: "Undergraduate Research Assitant at Takahashi Lab",
-      company: "Takashi Lab @ USC",
+      title: "Undergraduate Research Assistant at Takahashi Lab",
+      company: "Takahashi Lab @ USC",
       companyLink: "https://www.uscqsensing.org/",
       duration: "Nov 2023 – Jun 2024",
       location: "Los Angeles, California",
       descriptions: [
-        "collaborated with graduate students on quantum physics experiments, gaining expertise in quantum mechanics",
-        "built a C++ program to compute the standard deviation of N-V center data, significantly improving the speed and reliability of lab data processing.",
-        "used Mathematica to calculate detection volumes from research papers, verifying the accuracy of experimental results."
+        "collaborated with 4+ graduate students on quantum physics experiments, gaining expertise in quantum mechanics",
+        "developed a C++ program to calculate standard deviation for over 3000 N-V centers data, optimizing lab data analysis",
+        "utilized Mathematica to calculate detection volumes from research papers, enhancing experimental results"
       ]
     },
   ];

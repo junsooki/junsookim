@@ -29,7 +29,7 @@ export const Home = () => {
                     </div>
 
                     <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-                        I am a passionate sophomore studying Computer Engineering at USC.
+                        I am a passionate Junior studying Computer Engineering and Computer Science at USC.
                     </p>
 
                     <div className="flex justify-center space-x-4">
